@@ -49,6 +49,7 @@ main {
 
 .left-header {
     width: 30%;
+    margin-left: 15px;
 }
 
 .left-header span {
@@ -65,7 +66,7 @@ main {
     text-decoration: none;
     padding: 10px 40px;
     color: lightgrey;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .right-header {
@@ -102,7 +103,7 @@ h1 {
 p{
     color: lightgray;
     font-size: 25px;
-    line-height: 40px;
+    line-height: 48px;
 }
 
 mark {
@@ -276,13 +277,17 @@ h3 {
     margin: 40px 0px;
 }
 
-.portfolio-image {
-    width: 250px;
-    height: 300px;
-    margin-left: 10%;
-    border-radius: 20px;
-}
 
+.portfolio-image {
+    width: 310px;
+    height: 300px;
+    /* margin-left: 10%; */
+    border-radius: 20px 20px 0px 0px;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+}
 .extra-div {
     border-top: 1px solid rgb(191, 210, 255);
     width: 310px;
@@ -332,6 +337,8 @@ h3 {
     background: none;
     border: 1px solid rgb(191, 210, 255);
     border-radius: 20px;
+    color: lightgray;
+    font-size: 20px;
 }
 
 .send {
@@ -420,6 +427,7 @@ h4 {
     
     .left-header {
         width: 30%;
+        margin-left: 0px;
     }
     
     .left-header span {
@@ -427,8 +435,9 @@ h4 {
     }
     
     .logo {
-        width: 80px;
-        margin: -20px 0px;
+        width: 60px;
+        margin: 0px 0px;
+        margin-left: -35px;
         background: transparent;
     }
     
@@ -550,7 +559,7 @@ h4 {
         height: auto;
         border: 1px solid rgb(191, 210, 255);
         border-radius: 20px;
-        margin: 117px 0px;
+        margin: 100px 0px;
         padding: 0px 20px;
     }
     
@@ -559,7 +568,7 @@ h4 {
         height: auto;
         border: 1px solid rgb(191, 210, 255);
         border-radius: 20px;
-        margin: 117px 0px 0px 0px;
+        margin: 100px 0px 0px 0px;
         padding: 0px 20px; 
     }
     
@@ -567,13 +576,13 @@ h4 {
     #hr1 {
        -webkit-transform:rotate(90deg);
        margin: -60px 0px -60px 150px;
-       width: 110px;
+       width: 80px;
     }
     
     #hr2 {
         -webkit-transform:rotate(90deg);
-        margin: 55px 0px -60px 150px;
-        width: 110px;
+        margin: 45px 0px -60px 150px;
+        width: 80px;
      }
     
     h2 {
@@ -743,7 +752,7 @@ h4 {
         padding: 18px;
         background: none;
         color: lightgray;
-        font-size: 20px;
+        font-size: 19px;
         border: 1px solid rgb(191, 210, 255);
         border-radius: 15px;
     }

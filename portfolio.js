@@ -11,20 +11,25 @@ socialMedia: {
     },
 };
 
+function toggleMenu() {
+  var headerRight = document.querySelector('.right-header');
+  headerRight.classList.toggle('active');
+}
+
 
 function renderSection1(){
     const section1Container = document.querySelector('#section1');
     const section = `<div class="header-container">
                         <div class="header">
-                            <div class="left-header"><img src="" alt="" class="logo"></div>
+                            <div class="left-header"><img src="logo6.png" alt="" class="logo"></div>
                             <div class="right-header">
                                 <a href="#section2">SERVICES</a>
                                 <a href="#section3">SKILLS</a>
-                                <a href="#section4">PORTFOLIO</a>
+                                <a href="#section4">PROJECTS</a>
                                 <a href="#section5">CONTACT</a>
                                 <a href="#section1">ABOUT</a>
                             </div>
-                            <div class="hamburger-menu" onclick="toggleMenu()">&#9776;</div>
+                            <div class="hamburger-menu">&#9776;</div>
                         </div>
                     </div>
             <div class="section1-down">
@@ -33,7 +38,7 @@ function renderSection1(){
                     <P class="para">${section1Data.p}</P>
                     <div class="buttons">
                       <a href="https://github.com/" class="view-btn">VIEW MY WORK</a>
-                      <a href="" class="resume">RESUME</a>
+                      <a href="https://drive.google.com/file/d/1-qhfBm0sOGpzntisoGf7z020Zbe2Og3f/view?usp=drivesdk" class="resume">RESUME</a>
                     </div>
                 </div>
                 <div class="abhi-div">
@@ -41,12 +46,10 @@ function renderSection1(){
                 </div>
             </div>`;
     section1Container.innerHTML = section;
+
+    document.querySelector('.hamburger-menu').addEventListener('click', toggleMenu);
 }
 
-function toggleMenu() {
-  var headerRight = document.querySelector('.right-header');
-  headerRight.classList.toggle('active');
-}
 
 const servicesData = [
     {
@@ -136,15 +139,15 @@ function renderSection3() {
 
 const portfolioData = [
 {
-    image: "weather.png",
+    image: "./public/weather.png",
     technologies: "HTML CSS JAVASCRIPT",
     },
 {
-    image: "typing.png",
+    image: "./public/typing.png",
     technologies: "HTML CSS JAVASCRIPT",
     },
 {
-    image: "sticky.png",
+    image: "./public/sticky.png",
     technologies: "HTML CSS JAVASCRIPT",
     },
 ];
@@ -153,13 +156,13 @@ const portfolioData = [
 function renderSection4() {
     const section4Container = document.getElementById('section4');
     let section4 = `
-      <h2>PORTFOLIO</h2>
+      <h2>MY PROJECTS</h2>
       <div class="portfolio">
     `;
     portfolioData.forEach((portfolio, index) => {
       section4 += `
         <div class="portfolio${index + 1}">
-          <img src="${portfolio.image}" alt="" class="portfolio-image">
+          <img src="${portfolio.image}" alt="" class="portfolio-image" width="500px" height="100px">
           <div class="extra-div">${portfolio.technologies}</div>
         </div>
       `;
@@ -183,9 +186,9 @@ function renderSection5(){
                     </div>
                     <div class="social-div">
                         <p>SOCIAL MEDIA</p>
-                        <div>
+                        <div class="icons">
                             <a href="https://www.instagram.com/deshwal6996/"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://in.linkedin.com/in/abhishek-kumar-deshwal-85509a32b"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="www.linkedin.com/in/abhishek-kumar-deshwal-85509a32b"><i class="fa-brands fa-linkedin"></i></a>
                             <a href=""><i class="fa-brands fa-whatsapp"></i></a>
                         </div>
                     </div>
