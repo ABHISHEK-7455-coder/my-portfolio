@@ -1,5 +1,5 @@
 var section1Data = {
-    p:"I am Abhishek Deshwal - <mark>web-developer</mark> with a passion for creating beautiful and responsive websites."
+    p:"I am <mark>Abhishek Deshwal</mark> - <mark>web-developer</mark> with a passion for creating beautiful and responsive websites."
 }
 
 const contactData = {
@@ -21,7 +21,7 @@ function renderSection1(){
     const section1Container = document.querySelector('#section1');
     const section = `<div class="header-container">
                         <div class="header">
-                            <div class="left-header"><img src="logo6.png" alt="" class="logo"></div>
+                            <div class="left-header"><img src="logo.png" alt="" class="logo"></div>
                             <div class="right-header">
                                 <a href="#section2">SERVICES</a>
                                 <a href="#section3">SKILLS</a>
@@ -139,16 +139,22 @@ function renderSection3() {
 
 const portfolioData = [
 {
-    image: "./public/weather.png",
-    technologies: "HTML CSS JAVASCRIPT",
+    image: "/weather.png",
+    technologies: "Weather Forecast App",
+    gitLink: "https://github.com/ABHISHEK-7455-coder/WeatherForecast",
+    netlify: "weatherapp7455.netlify.app"
     },
 {
-    image: "./public/typing.png",
-    technologies: "HTML CSS JAVASCRIPT",
+    image: "/typing.png",
+    technologies: "Typing Test App",
+    gitLink: "https://github.com/ABHISHEK-7455-coder/typing-test-app",
+    netlify: "typingtest13.netlify.app"
     },
 {
-    image: "./public/sticky.png",
-    technologies: "HTML CSS JAVASCRIPT",
+    image: "/sticky.png",
+    technologies: "Sticky Notes App",
+    gitLink: "https://github.com/ABHISHEK-7455-coder/Sticky-Notes",
+    netlify: "my-stickynote.netlify.app"
     },
 ];
   
@@ -164,6 +170,10 @@ function renderSection4() {
         <div class="portfolio${index + 1}">
           <img src="${portfolio.image}" alt="" class="portfolio-image" width="500px" height="100px">
           <div class="extra-div">${portfolio.technologies}</div>
+          <div class="links">
+          <a href="${portfolio.gitLink}"><i class="fa-brands fa-github"></i></a>
+          <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
         </div>
       `;
     });
